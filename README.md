@@ -1,6 +1,6 @@
 ### test: Infectious Diseases - Household Modeling
 
-[Oron Madmon](oronmadmon@gmail.com)
+Oron Madmon
 
 
 [test](https://github.com/oronmadmon/test) is an [R](https:/www.r-project.org) package. This package generalizes [independent hypothesis weighting (IHW)](https://bioconductor.org/packages/release/bioc/html/IHW.html)  multiple testing procedure to correlated tests. It enables using of both correlation between the tests and covarites that are informative under the alternative to increases power over the Bonfferoni correction. 
