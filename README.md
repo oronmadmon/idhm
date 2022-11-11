@@ -1,9 +1,9 @@
-### test: Infectious Diseases - Household Modeling
+### idhm: Infectious Diseases - Household Modeling
 
 Oron Madmon
 
 
-[test](https://github.com/oronmadmon/test) is an [R](https:/www.r-project.org) package. This package generalizes [independent hypothesis weighting (IHW)](https://bioconductor.org/packages/release/bioc/html/IHW.html)  multiple testing procedure to correlated tests. It enables using of both correlation between the tests and covarites that are informative under the alternative to increases power over the Bonfferoni correction. 
+[idhm](https://github.com/oronmadmon/idhm) is an [R](https:/www.r-project.org) package. This package generalizes [independent hypothesis weighting (IHW)](https://bioconductor.org/packages/release/bioc/html/IHW.html)  multiple testing procedure to correlated tests. It enables using of both correlation between the tests and covarites that are informative under the alternative to increases power over the Bonfferoni correction. 
 
 #### Installation
 
@@ -18,7 +18,7 @@ Then install R/corihw using the `install_github` function in the
 
 ```r
 library(devtools)
-install_github("oronmadmon/test")
+install_github("oronmadmon/idhm")
 ```
 
 #### Example use
