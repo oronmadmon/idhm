@@ -27,8 +27,14 @@ generate_obs_list(
 
 \item{missing_mechanism}{the generated observations will contain 1-missing_mechanism\% missing tests}
 
-\item{seed}{seed is used for reproducability}
+\item{seed}{seed is used for reproducibility}
 }
 \description{
 generate household observations based on a given probabilistic model.
+}
+\examples{
+obs_list <- list("1,2,0,1,1,0,1,1,0", "2,1,0,2,0,0,2,0,0")
+generate_obs_list(build_dict(obs_list,3), 3, 4)
+generate_obs_list(build_dict(obs_list,3), 3, 4, missing_mechanism = 1)
+
 }

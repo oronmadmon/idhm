@@ -1,5 +1,4 @@
 permutations <- function(n, original_call=TRUE){
-  # create all possible permutations over [n] as list of lists
   if( (floor(n)!=n) | (n<1) ) stop('n must be a natural number')
   perms_list <- vector(mode="list", length=factorial(n))
   if (n==1) {

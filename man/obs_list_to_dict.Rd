@@ -14,3 +14,8 @@ obs_list_to_dict(obs_list, risk_groups)
 \description{
 transfers obs_list to a dictionary.
 }
+\examples{
+obs_list <- list("1,2,0,1,1,0,1,1,0", "2,1,0,2,0,0,2,0,0")
+obs_list_to_dict(obs_list,3)
+
+}

@@ -14,3 +14,8 @@ calc_max_members(obs_list, risk_groups)
 \description{
 calculating the maximal household, element-wise, based on the given observation.
 }
+\examples{
+obs_list <- list("1,2,0,1,1,0,1,1,0", "2,1,0,2,0,0,2,0,0")
+calc_max_members(obs_list,3)
+
+}

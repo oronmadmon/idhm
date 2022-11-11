@@ -1,7 +1,20 @@
+#' Prob permutations
+#'
+#' calculating the symbolic probabilities of all permutations of the risk groups
+#'
+#' @import stringr
+#'
+#' @param risk_groups number of risk groups in the model
+#' @param sym_prob symbolic probability of the original household
+#' @param id2 id2 of the original household
+#'
+#' @examples
+#' prob_permutations(3,"Q1*Q2","1,1,0,0,0,0")
+#' prob_permutations(3, 'Q1^2*Q2', '2,1,0,0,0,0')
+#'
+#' @export
 prob_permutations <- function(risk_groups, sym_prob, id2){
-  # sym_prob <- "Q1*Q2"
-  # id2 <- "1,1,0,0,0,0"
-  param_names <- paste('Q.', 1:risk_groups)
+  param_names <- paste0('Q', 1:risk_groups)
   perms <- id2_permutations(risk_groups, id2)
   outer <- param_names
   names(outer) <- paste0('Q.', 1:risk_groups)

@@ -6,6 +6,10 @@
 #' @param obs_list list of observations
 #' @param risk_groups number of risk groups in the model
 #'
+#' @examples
+#' obs_list <- list("1,2,0,1,1,0,1,1,0", "2,1,0,2,0,0,2,0,0")
+#' calc_max_members(obs_list,3)
+#'
 #' @export
 calc_max_members <- function(obs_list,risk_groups){
   maximal_vec <- numeric(risk_groups)

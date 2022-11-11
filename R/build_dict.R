@@ -7,6 +7,10 @@
 #' @param risk_groups number of risk groups in the model
 #' @param past_dict optional
 #'
+#' @examples
+#' obs_list <- list("1,2,0,1,1,0,1,1,0", "2,1,0,2,0,0,2,0,0")
+#' build_dict(obs_list,3)
+#'
 #' @export
 build_dict <- function(obs_list, risk_groups, past_dict = NULL){
   # extract maximal family size according to the data

@@ -3,6 +3,7 @@
 #' recursively build the parametric model up to the maximal household.
 #'
 #' @import Ryacas
+#' @import tidyr
 #'
 #' @param max_members maximal members per risk group
 #' @param past_dict optional

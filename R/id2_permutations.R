@@ -1,6 +1,4 @@
 id2_permutations <- function(risk_groups, id2){
-  # return all distinct permutations except identity
-  # id2 <- "2,1,0,0,0,0"
   id_2 <- strsplit(id2, split=',')[[1]]
   permutations_dict <- permutations(risk_groups)
   perm_dict <- permutations_dict[-nrow(permutations_dict),c('index', 'permutation')]
