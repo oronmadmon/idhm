@@ -1,6 +1,7 @@
 #' Build household model from obs
 #'
-#' shell function for calculating the maximal household and calculating recursively build the parametric model based on the given observation.
+#' shell function for calculating the maximal household
+#' and recursively calculate build the parametric model based on the given observation.
 #'
 #'
 #' @param obs_list list of observations

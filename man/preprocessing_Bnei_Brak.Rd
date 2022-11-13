@@ -7,8 +7,13 @@
 preprocessing_Bnei_Brak(threshold = 2)
 }
 \arguments{
-\item{threshold}{an individual result considered as certain if either 1. a serological test result is available 2. at least one PCR positive result or 3. threshold negative results}
+\item{threshold}{an individual result considered as certain if either
+\enumerate{
+\item a serological test result is available
+\item at least one PCR positive result or
+\item threshold negative results
+}}
 }
 \description{
-create all possible households, and calculate both the conditional probabilities and the unconditional one
+create all possible households, and calculate both conditional/unconditional probabilities
 }

@@ -34,7 +34,7 @@ obs_list <- list("1,2,0,1,1,0,1,1,0", "2,1,0,2,0,0,2,0,0", "0,0,1,0,0,0,0,0,0")
 risk_groups <- 3
 dict <- build_dict(obs_list,risk_groups)
 number_of_families <- 15
-new_obs_list <- generate_obs_list(dict, risk_groups, number_of_families, families_generator = c(2,1,1), models_generator = c(0.8, 0.8, 0.87), missing_mechanism = 0.7, seed = 3)
+new_obs_list <- generate_obs_list(dict, risk_groups, number_of_families)
 observations_dict <- obs_list_to_dict(new_obs_list, risk_groups)
 imputationsTable <- preparing_for_EM(dict, observations_dict, risk_groups)
 run_EM(imputationsTable, risk_groups)

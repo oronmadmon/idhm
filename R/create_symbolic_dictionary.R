@@ -4,6 +4,8 @@
 #'
 #' @import Ryacas
 #' @import tidyr
+#' @importFrom dplyr left_join
+#' @importFrom dplyr select
 #'
 #' @param max_members maximal members per risk group
 #' @param past_dict optional
@@ -32,7 +34,7 @@ create_symbolic_dictionary <- function(max_members,past_dict = NULL) {
 
   # if there is a past dictionary add it, if not add an empty column for prob
   if(!is.null(past_dict)){
-    dict <- left_join(dict, select(past_dict,prob,id2),by = c("id2"="id2"))
+    dict <- left_join(dict, select(past_dict,"prob","id2"),by = c("id2"="id2"))
   } else {
     dict$prob <- NA
   }

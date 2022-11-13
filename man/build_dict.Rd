@@ -14,7 +14,8 @@ build_dict(obs_list, risk_groups, past_dict = NULL)
 \item{past_dict}{optional}
 }
 \description{
-shell function for calculating the maximal household and calculating recursively build the parametric model based on the given observation.
+shell function for calculating the maximal household
+and recursively calculate build the parametric model based on the given observation.
 }
 \examples{
 obs_list <- list("1,2,0,1,1,0,1,1,0", "2,1,0,2,0,0,2,0,0")

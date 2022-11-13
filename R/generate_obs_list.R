@@ -2,6 +2,8 @@
 #'
 #' generate household observations based on a given probabilistic model.
 #'
+#' @importFrom stats rpois
+#' @importFrom stats rbinom
 #'
 #' @param model_dict probabilistic model
 #' @param risk_groups number of risk groups in the model

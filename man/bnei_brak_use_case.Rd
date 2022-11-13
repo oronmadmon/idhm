@@ -11,6 +11,17 @@ bnei_brak_use_case(
   full_log = FALSE
 )
 }
+\arguments{
+\item{initialization}{EM parameter, see ?run_EM}
+
+\item{max_iter}{EM parameter, see ?run_EM}
+
+\item{tolerance}{EM parameter, see ?run_EM}
+
+\item{full_log}{EM parameter, see ?run_EM}
+}
 \description{
-estimation of the susceptibilities of adults/adolescents/children using a dataset containing SARS-CoV-2 testing results, collected from the city of Bnei Brak, Israel.
+estimation of the susceptibilities of adults/adolescents/children
+using a dataset containing SARS-CoV-2 testing results,
+collected from the city of Bnei Brak, Israel.
 }

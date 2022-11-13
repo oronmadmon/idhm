@@ -1,6 +1,7 @@
 #' Imputation table
 #'
-#' create all possible households for a partial observation and calculate, based on the probabilistic model, the conditional probabilities
+#' create all possible households for a partial observation and calculate,
+#'  based on the probabilistic model, the conditional probabilities
 #'
 #' @param dict probabilistic model
 #' @param id3_template partial observation

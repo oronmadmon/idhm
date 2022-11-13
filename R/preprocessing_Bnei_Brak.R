@@ -1,14 +1,17 @@
 #' Preprocessing Bnei Brak data
 #'
-#' create all possible households, and calculate both the conditional probabilities and the unconditional one
+#' create all possible households, and calculate both conditional/unconditional probabilities
 #'
 #' @import readr
 #'
-#' @param threshold an individual result considered as certain if either 1. a serological test result is available 2. at least one PCR positive result or 3. threshold negative results
+#' @param threshold an individual result considered as certain if either
+#' 1. a serological test result is available
+#' 2. at least one PCR positive result or
+#' 3. threshold negative results
 #'
 #' @export
 preprocessing_Bnei_Brak <- function(threshold = 2){
-  df <- read_csv("data/families_data_with_sero.csv")
+  df <- read_csv("https://raw.githubusercontent.com/oronmadmon/idhm/main/data/families_data_with_sero.csv")
 
   families_keys <- df$family_hash[!duplicated(df$family_hash)]
 

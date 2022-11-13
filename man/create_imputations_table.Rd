@@ -14,7 +14,8 @@ create_imputations_table(dict, observation_table, risk_groups)
 \item{risk_groups}{number of risk groups in the model}
 }
 \description{
-create all possible households for a table of partial observations and calculate, based on the probabilistic model, the conditional probabilities
+create all possible households for a table of partial observations and calculate,
+based on the probabilistic model, the conditional probabilities
 }
 \examples{
 obs_list <- list("1,2,0,1,1,0,1,1,0", "2,1,0,2,0,0,2,0,0")

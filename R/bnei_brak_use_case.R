@@ -1,6 +1,8 @@
 #' Bnei Brak data
 #'
-#' estimation of the susceptibilities of adults/adolescents/children using a dataset containing SARS-CoV-2 testing results, collected from the city of Bnei Brak, Israel.
+#' estimation of the susceptibilities of adults/adolescents/children
+#' using a dataset containing SARS-CoV-2 testing results,
+#' collected from the city of Bnei Brak, Israel.
 #'
 #' @param initialization EM parameter, see ?run_EM
 #' @param max_iter EM parameter, see ?run_EM
@@ -14,7 +16,7 @@ bnei_brak_use_case <- function(initialization=3, max_iter=10, tolerance=0.01, fu
   # model
   risk_groups <- 3
   param_names <- paste0('Q', 1:risk_groups)
-  dict <- readRDS('data/Bnei_Brak_dict.RDS')
+  dict <- readRDS(url("https://github.com/oronmadmon/idhm/blob/main/data/Bnei_Brak_dict.RDS?raw=true", method="libcurl"))
 
   # observations
   temp <- preprocessing_Bnei_Brak(t)
