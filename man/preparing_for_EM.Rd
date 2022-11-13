@@ -4,7 +4,7 @@
 \alias{preparing_for_EM}
 \title{Preparing for EM}
 \usage{
-preparing_for_EM(dict, observation_table, risk_groups)
+preparing_for_EM(dict, observation_table, risk_groups, obs_weights = NULL)
 }
 \arguments{
 \item{dict}{probabilistic model}
@@ -12,6 +12,8 @@ preparing_for_EM(dict, observation_table, risk_groups)
 \item{observation_table}{partial observations table}
 
 \item{risk_groups}{number of risk groups in the model}
+
+\item{obs_weights}{useful when the index case isn't known, optional}
 }
 \description{
 create all possible households, and calculate both the conditional probabilities and the unconditional one
